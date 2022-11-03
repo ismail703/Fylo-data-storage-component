@@ -1,0 +1,215 @@
+/*------------ Declaring variable --------------*/
+:root {
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+  --Pale-Blue: hsl(243, 100%, 93%);
+
+}
+
+/*------------ Global Rules --------------*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;  
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background: var(--Very-Dark-Blue) url(images/bg-desktop.png) no-repeat;
+    background-size: 99.4% 50%;
+    background-position: bottom;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 662px) {
+    body {
+        background-image: url(images/bg-mobile.png);
+        background-size: cover;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+/*------------ Start Fylo --------------*/
+.fylo {
+    background-color: var(--Dark-Blue);
+    border-radius: 7px 90px 7px 7px;
+    padding: 2.4em 0 2.4em 2.2em;
+    z-index: 2;
+    width: 25%;
+}
+
+.fylo .icons {
+    margin-top: 1.4em;
+    display: flex;
+}
+
+.fylo .icons div {
+    background-color: var(--Very-Dark-Blue);
+    padding: .75em;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fylo .icons div:not(:first-child) {
+    margin-left: 10px;
+}
+
+.fylo .icons img:not(:first-child) {
+    margin-left: .8em;
+}
+
+@media (max-width: 662px) {
+    .fylo {
+        width: 80%;
+    }
+}
+
+/*------------ End Fylo --------------*/
+
+/*------------ Start content --------------*/
+.content {
+    position: relative;
+    margin-left: 25px;
+    width: 36%;
+    margin-top: 3.2rem;
+}
+
+.content .size {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    padding: 10px 15px;
+    border-radius: 7px;
+    position: absolute;
+    right: 1.85rem;
+    top: -3.5rem;
+    z-index: 2;
+}
+
+.content .size::after {
+    content: '';
+    width: 0;
+    height: 5px;
+    border: 20px solid;
+    border-color: transparent #fff transparent transparent;
+    position: absolute;
+    top: 44.5px;
+    right: 0;
+}
+
+.content .size .nbr {
+    color: var(--Very-Dark-Blue);
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.content .size .taille {
+    color: var(--Grayish-Blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.content .info {
+    background-color: var(--Dark-Blue);
+    color: var(--Pale-Blue);
+    padding: 2.2em 1.85em;
+    border-radius: 7px;
+    position: relative;
+}
+
+.content .info p {
+    font-weight: 300;
+    font-size: 13.5px;
+}
+
+.content .info p span {
+    font-weight: 700;
+}
+
+.content .info .progress {
+    width: 100%;
+    height: 13px;
+    background-color: var(--Very-Dark-Blue);
+    margin-block: 10px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.content .info .progress div {
+    width: 75%;
+    height: 85%;   
+    background-image: linear-gradient(45deg,
+                                hsl(6, 100%, 80%),
+                                hsl(335, 100%, 65%)
+                                );
+    border-radius: 7px;  
+    position: relative;    
+    display: flex;
+    align-items: center;                      
+}
+
+.content .info .progress div span {
+    width: 10px;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+}
+
+.content .info .left,
+.content .info .right {
+    font-weight: 700;
+}
+
+.content .info .right {
+    position: absolute;
+    right: 1.85rem;
+}
+
+@media (max-width: 662px) {
+    .content {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .content .size {
+        position: absolute;
+        top: 82%;
+        right: 23%;
+        width: 57%;
+    }
+
+    .content .size::after {
+        display: none;
+    }
+
+    .content .info {
+        padding: 2.5rem 1.9rem;
+    }
+}
+/*------------ End content --------------*/
+
