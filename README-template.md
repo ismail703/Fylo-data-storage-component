@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor Solution](https://github.com/ismail703/Fylo-data-storage-component)
-- Live Site URL: [Online preview](https://your-live-site-url.com)
+- Live Site URL: [Online preview]( https://ismail703.github.io/Fylo-data-storage-component/)
 
 ## My process
 
