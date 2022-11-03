@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://github.com/ismail703/Fylo-data-storage-component/blob/main)
+- Solution URL: [Frontend Mentor Solution](https://github.com/ismail703/Fylo-data-storage-component)
 - Live Site URL: [Online preview](https://your-live-site-url.com)
 
 ## My process
